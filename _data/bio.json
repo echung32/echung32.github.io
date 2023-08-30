@@ -2,14 +2,14 @@
   "basics": {
     "name": "Ethan Chung",
     "label": "Student",
-    "picture": "https://github.com/83hrfjsdfjshi.png",
+    "picture": "https://github.com/echung32.png",
     "email": "echung32@hawaii.edu",
     "phone": "",
-    "website": "https://83hrfjsdfjshi.github.io",
+    "website": "https://echung32.github.io",
     "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2025.",
     "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
-      { "network": "github", "username": "83hrfjsdfjshi", "url": "https://github.com/83hrfjsdfjshi" },
+      { "network": "github", "username": "echung32", "url": "https://github.com/echung32" },
       { "network": "linkedin", "username": "ethanchung", "url": "https://www.linkedin.com/in/ethan-chung-010a96289/" }
     ]
   },
