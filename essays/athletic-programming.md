@@ -8,9 +8,10 @@ published: true
 labels:
   - Software Engineering
   - Learning
+  - Javascript
 ---
 
-<img width="100px" class="rounded float-start pe-4" src="../img/athletic-programming/javascript-logo-banner.jpg">
+<img width="100%" class="rounded float-start py-4" src="../img/athletic-programming/javascript-logo-banner.jpg">
 
 ## FreeCodeCamp
 
