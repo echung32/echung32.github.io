@@ -11,7 +11,7 @@ labels:
   - Javascript
 ---
 
-<img width="100%" class="rounded float-start py-4" src="../img/athletic-programming/javascript-logo-banner.jpg">
+<img width="100%" class="rounded py-4" src="../img/athletic-programming/javascript-logo-banner.jpg">
 
 ## FreeCodeCamp
 

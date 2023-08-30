@@ -16,7 +16,7 @@ labels:
 summary: "A proof-of-concept website developed for Hawaii's Office of Enterprise Technology Services to create a secure way for state workers to share and distribute short URLs."
 ---
 
-<img class="img-fluid" width="25%" class="rounded float-start py-4" src="../img/url-shortener/HACC-with-Flag.png">
+<img width="100%" class="py-4" src="../img/url-shortener/HACC-with-Flag.png">
 
 ets-url-shortener is a web application that was co-developed with [Vincent Chan](https://eve-liya.github.io/) for the Hawaii Annual Code Challenge in 2022. This proof-of-concept website was developed for Hawaii's Office of Enterprise Technology Services to create a secure way for state workers to share and distribute short URLs.
 
