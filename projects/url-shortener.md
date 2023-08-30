@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/url-shortener/HACC-with-Flag.png
+image: img/url-shortener/interface.png
 title: "HACC 2022 - URL Shortener"
 date: 2022
 published: true
