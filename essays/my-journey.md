@@ -22,7 +22,7 @@ I went through multiple guides on YouTube and tried my best to follow along. I w
 
 Minecraft was what sparked my interest in software engineering. Unfortunately, I’ve since stopped playing Minecraft, and my goals in software engineering have changed. I want to diversify my skills and expand my repertoire of experience to things beyond maintaining a server, such as designing and developing websites and applications. I joined the Hawaii Annual Code Challenge in 2022 alongside my friend for this very reason.
 
-## Hawaii Annual Code Challenge
+### Hawaii Annual Code Challenge
 
 Although I had limited experience with web development beforehand, this was the first proper experience, making use of React, TypeScript, and Firebase to build my project. It was an exciting experience and, while we faced some head-wracking challenges, we were able to complete our project on time and score the 1st place prize.
 
