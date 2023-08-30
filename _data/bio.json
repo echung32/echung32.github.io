@@ -43,15 +43,15 @@
   ],
   "work": [
     {
-      "company": "Temporary",
-      "position": "Web Developer",
+      "company": "UH Manoa",
+      "position": "Assistant Teacher Assistant",
       "website": "",
-      "startDate": "2015-08-01",
-      "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "startDate": "2023",
+      "endDate": "2023",
+      "summary": "Assisted a TA for the ICS 211 course.",
       "highlights": [
-        "Highlight 1",
-        "Highlight 2"
+        "Taught students",
+        "Helped students with homework"
       ]
     }
   ],
@@ -62,16 +62,16 @@
       "position": "Club officer",
       "startDate": "2023",
       "endDate": "2024",
-      "summary": "",
+      "summary": "Taught students programming and algorithms",
       "highlights": [
-        "Club officer, PANDA, 2023-Present"
+        "Club officer, PANDA, 2023-2024"
       ]
     }
   ],
   "awards": [
     {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
+      "title": "Manoa Academic Honors",
+      "date": "2022-2026",
       "awarder": "State of Hawaii",
       "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
     },
@@ -79,7 +79,7 @@
       "title": "First place",
       "date": "2022",
       "awarder": "Hawaii Annual Code Challenge",
-      "summary": "My team won first place in 2022.  See my portfolio site for more details."
+      "summary": "My team won first place in 2022. See my portfolio site for more details."
     }
   ],
   "references": [
