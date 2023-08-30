@@ -34,7 +34,7 @@ The challenge instructions can be viewed here.
 
 Our presentation deck can be viewed here.
 
-- Deck: <a href="https://echung32.github.io/hacc2022-presentation.pdf">https://echung32.github.io/hacc2022-presentation.pdf</a>
+- Deck: <a href="https://echung32.github.io/assets/hacc2022-presentation.pdf">https://echung32.github.io/assets/hacc2022-presentation.pdf</a>
 
 We presented these slides for Judging day. You can view the recording here.
 
