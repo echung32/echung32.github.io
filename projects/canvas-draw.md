@@ -12,7 +12,7 @@ labels:
 summary: "A web application that lets you draw lines, squares, and circles on a canvas using coordinates."
 ---
 
-<img width="50%" class="py-4 img-fluid" src="../img/canvas-draw/canvas-draw.png">
+<img width="50%" class="py-4" src="../img/canvas-draw/canvas-draw.png">
 
 This is a basic web application developed in Niu Valley Middle School's Computer Science Club. This club introduced me to basic website development, including the relationship between HTML, CSS and JavaScript files. This was also my first project which was completed in school, guided by a mentor.
 
