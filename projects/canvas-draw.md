@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/canvas-draw/canvas-draw.png
 title: "Canvas Draw"
-date: 2018
+date: 2018-02
 published: true
 labels:
   - JavaScript

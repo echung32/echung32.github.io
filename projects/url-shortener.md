@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/url-shortener/interface.png
 title: "Hawaii Annual Code Challenge 2022"
-date: 2022
+date: 2022-10
 published: true
 labels:
   - TypeScript
