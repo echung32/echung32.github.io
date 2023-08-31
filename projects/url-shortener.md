@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: img/url-shortener/interface.png
-title: "HACC 2022 - URL Shortener"
+title: "Hawaii Annual Code Challenge 2022"
 date: 2022
 published: true
 labels:
@@ -13,14 +13,23 @@ labels:
   - Google Analytics
   - TailwindCSS
   - GitHub
-summary: "A proof-of-concept website developed for Hawaii's Office of Enterprise Technology Services to create a secure way for state workers to share and distribute short URLs."
+summary: "A proof-of-concept website developed for Hawaii's Office of Enterprise Technology Services to create a secure way for state workers to share and distribute short URLs. Won the 1st place award for coded solutions."
 ---
 
 <img width="100%" class="py-4" src="../img/url-shortener/HACC-with-Flag.png">
 
-ets-url-shortener is a web application that was co-developed with [Vincent Chan](https://eve-liya.github.io/) for the Hawaii Annual Code Challenge in 2022. This proof-of-concept website was developed for Hawaii's Office of Enterprise Technology Services to create a secure way for state workers to share and distribute short URLs.
+ets-url-shortener is a web application that was co-developed with [Vincent Chan](https://eve-liya.github.io/) for the Hawaii Annual Code Challenge in 2022. This proof-of-concept website was developed for Hawaii's Office of Enterprise Technology Services to create a secure way for state workers to share and distribute short URLs without relying on third-party link shorteners, which can be prone to malware. This includes passwordless logins through Single-Sign On, customizable short URLs, authentication-gated short URLs, redirection timer for URL screening, powerful analytics through Google Analytics, and more.
+
+Vincent and I both shared a part in the prototyping and development of the website, along with deciding the tech stack that we would use to build the website. As we were both beginners, we opted to chose popular frameworks like React and Firebase, which has a large community surrounding it. We learned how to prototype and design a website in Figma, develop a website using React and using open-source packages to help create components, and finally using Firebase to host, authenticate, and store data for the website.
 
 Out of the fourty-four teams that participated in the challenge, **our team brought first place for the "Coded Solutions" category.**
+
+## Future Improvements
+A variety of improvements can be made to improve the user experience of users. This is a short list of ideas that could be implemented in the future.
+
+- Adding an intuitive admin panel to manage everyone's links without having to go through it manually through the database.
+- Making the website feel more responsive with animations. This would not affect the functionality of the website, but would improve the user experience greatly.
+- Add a button to allow users to see analytics for their URLs. Currently, analytics can only be seen by admins.
 
 ## More information
 
