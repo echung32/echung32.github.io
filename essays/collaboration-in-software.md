@@ -10,6 +10,8 @@ labels:
   - Learning
 ---
 
+<img width="100%" class="rounded py-4" src="../img/collaboration-in-software/costa.png">
+
 On August 30th, 2023, Mr. Costa from Business Solution Technologies gave a talk about the crucial skills that are needed for effective communication and collaboration in a team-driven environment. Among the many things that Mr. Costa spoke about, although they’re arguably all equally important, there were two points that immediately stood out the most to me.
 
 ## Functional and Technical Documentation
