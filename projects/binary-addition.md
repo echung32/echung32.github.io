@@ -15,7 +15,9 @@ summary: "A simple Python program that accepts two decimal numbers and sums the 
 
 This project was completed in ICS 141, a discrete math course. This is a simple Python program that was completed that takes two integers as inputs, and returns the binary representiaton of the sum of those two numbers. The addition is performed using binary addition, so the decimal numbers are converted to binary before they are added.
 
-This project was done individually and the work is entirely my own. I was not familiar with Python, and this experience allowed me to learn basic functions of the language, including vast variety of helper functions that are already built into the language, such as `zfill`, which pads a string with zeros, and `[::-1]`, which reverses a string. Moreover, this taught me how to transform my knowledge of how an algorithm is done in real life manually, and how to implement it in code.
+This project was done individually and the work is entirely my own. I was not very familiar with developing in Python, and this experience allowed me to learn basic functions of the language, including vast variety of helper functions that are already built into the language, such as `zfill`, which pads a string with zeros, and `[::-1]`, which reverses a string. Moreover, this taught me how to transform my knowledge of how an algorithm is done in real life manually, and how to implement it in code. I was surprised at how simple, but powerful, Python was as a language.
+
+The source code for the program is provided below. `decimal_to_binary` is used by `binary_addition` to convert the decimal numbers into binary numbers. Afterward, the results returned from `decimal_to_binary` is padded to the longest length binary string. Finally, the sum of both binary values are calculated by translating the algorithm into Python.
 
 ## Source Code
 ```python

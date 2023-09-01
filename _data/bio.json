@@ -2,12 +2,12 @@
   "basics": {
     "name": "Ethan Chung",
     "label": "Student",
-    "picture": "https://github.com/echung32.png",
+    "picture": "https://echung32.github.io/img/profile.png",
     "email": "echung32@hawaii.edu",
     "phone": "",
     "website": "https://echung32.github.io",
     "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2025.",
-    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "location": { "address": "", "postalCode": "", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "echung32", "url": "https://github.com/echung32" },
       { "network": "linkedin", "username": "ethanchung", "url": "https://www.linkedin.com/in/ethan-chung-010a96289/" }
@@ -42,29 +42,31 @@
     }
   ],
   "work": [
-    {
-      "company": "UH Manoa",
-      "position": "Assistant Teacher Assistant",
-      "website": "",
-      "startDate": "2023",
-      "endDate": "2023",
-      "summary": "Assisted a TA for the ICS 211 course.",
-      "highlights": [
-        "Taught students",
-        "Helped students with homework"
-      ]
-    }
+    
   ],
   "volunteer": [
     {
-      "organization": "PANDA at ACM",
-      "website": "",
+      "organization": "PANDA - ACM",
+      "website": "https://acmmanoa.org/panda",
       "position": "Club officer",
       "startDate": "2023",
-      "endDate": "2024",
-      "summary": "Taught students programming and algorithms",
+      "endDate": "Present",
+      "summary": "Assist in teaching various programming concepts to ICS students",
       "highlights": [
-        "Club officer, PANDA, 2023-2024"
+        "Teach students about various technical interview techniques",
+        "Go over various data structures and algorithms"
+      ]
+    },
+    {
+      "company": "UH Manoa - ICS Department",
+      "position": "Assistant Teacher Assistant",
+      "website": "",
+      "startDate": "2023",
+      "endDate": "Present",
+      "summary": "Assist in the ICS 211 course as an assistant to the teacher assistant.",
+      "highlights": [
+        "Help students understand computer science concepts",
+        "Aid students in debugging their code"
       ]
     }
   ],
@@ -73,7 +75,7 @@
       "title": "Manoa Academic Honors",
       "date": "2022-2026",
       "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
+      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.8 at a Hawai'i public school."
     },
     {
       "title": "First place",
