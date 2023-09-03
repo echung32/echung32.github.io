@@ -21,19 +21,19 @@ After Professor Port went over the assignment, my initial thought was the result
 ### The Obvious Solution
 ```js
 function BertErnie(num) {
-	if (num % 6 === 0 && num % 4 === 0) {
-	return "BertErnie";
-} else if (num % 4 === 0) {
-	return "Bert";
-} else if (num % 6 === 0) {
-	return "Ernie";
-} else {
-	return num;
-}
+    if (num % 6 === 0 && num % 4 === 0) {
+        return "BertErnie";
+    } else if (num % 4 === 0) {
+        return "Bert";
+    } else if (num % 6 === 0) {
+        return "Ernie";
+    } else {
+        return num;
+    }
 }
 
 for (let i = 1; i <= 100; i++) {
-	console.log(BertErnie(i));
+    console.log(BertErnie(i));
 }
 ```
 
@@ -42,15 +42,15 @@ Although this would solve the problem, I was unsatisfied with the amount of if-e
 ### My Solution
 ```js
 function BertErnie(num) {
-	let str = "";
-	if (num % 4 === 0) str += "Bert";
+    let str = "";
+    if (num % 4 === 0) str += "Bert";
     if (num % 6 === 0) str += "Ernie";
-	if (num === "") str = num;
-return str;
+    if (num === "") str = num;
+    return str;
 }
 
 for (let i = 1; i <= 100; i++) {
-	console.log(BertErnie(i));
+    console.log(BertErnie(i));
 }
 ```
 
@@ -58,8 +58,8 @@ I was able to remove the duplicated divisibility calculations and reduced the co
 
 ```js
 function BertErnie(num) {
-	let str;
-	if (num % 4 === 0) str += "Bert";
+    let str;
+    if (num % 4 === 0) str += "Bert";
     if (num % 6 === 0) str += "Ernie";
     return str ?? num; // ‘??’ is the nullish-coalescing operator.
 }
