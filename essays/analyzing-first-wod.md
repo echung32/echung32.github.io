@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "Analyzing my first WOD"
 # All dates must be YYYY-MM-DD format!
-date: 2023-08-30
+date: 2023-09-02
 published: true
 labels:
   - Software Engineering
