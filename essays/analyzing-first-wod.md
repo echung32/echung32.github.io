@@ -11,7 +11,7 @@ labels:
   - Javascript
 ---
 
-<img width="50%" class="rounded p-4 float-start" src="../img/analyzing-first-wod/banner.png">
+<img width="100%" class="rounded py-4" src="../img/analyzing-first-wod/banner.png">
 
 On August 30th, we were assigned our first in-class timed WOD (Workout of the Day). Professor Port roughly went over the assignment. We were to iterate through a list of numbers from 1 to 100. Any number that is divisible by 4 should return “Bert”, and every number that is divisible by 6 should return “Ernie”. If a number is divisible by both 4 and 6, then it should return “BertErnie”. Otherwise, the input itself should be returned.
 
