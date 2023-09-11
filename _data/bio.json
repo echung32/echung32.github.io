@@ -27,7 +27,7 @@
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "Windows", "Fedora Linux", "Git/GitHub" ]
+      "keywords": [ "Windows", "Fedora Linux", "Git/GitHub", "JetBrains" ]
     }
   ],
   "education": [
