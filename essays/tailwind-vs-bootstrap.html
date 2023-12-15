@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Tailwind vs Bootstrap | Ethan Chung | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://echung32.github.io/img/profile.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ethan Chung | Professional Portfolio">
+    <meta property="og:url" content="https://echung32.github.io/essays/tailwind-vs-bootstrap.html">
+    <meta property="og:title" content="Tailwind vs Bootstrap | Ethan Chung | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://echung32.github.io/img/profile.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Tailwind vs Bootstrap | Ethan Chung | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Ethan Chung</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Tailwind vs Bootstrap</h1>
+  <span class="date">04 Oct 2023</span>
+  <hr>
+  <p><img width="100%" class="rounded py-4" src="../img/tailwind-vs-bootstrap/banner.jpg" /></p>
+
+<p>User Interface (UI) frameworks are extremely useful tools to quickly design web applications. Many disagree with the format of writing all your style in HTML instead of using CSS files, but from my point of view, this makes the format of the website more easy to interpret at a glance. I don’t have to switch between two files and look at what classes the HTML file is using, then check the CSS file for what that class actually does. This, coincidentally, is the reason why I am finding myself to dislike using Bootstrap as a UI framework. I have used Bootstrap in the past, but have since switched to Tailwind as my framework of choice after I started playing around with development in React and developed a <a href="https://echung32.github.io/projects/url-shortener.html">URL Shortener for HACC 2022</a>.</p>
+
+<h2 id="problem-with-bootstrap">Problem with Bootstrap</h2>
+
+<p>My main problem with Bootstrap is that there is a lot of “information hiding” at play. Take, for example, a <code class="language-plaintext highlighter-rouge">.container</code> class in Bootstrap. This should simply do one thing: set the <code class="language-plaintext highlighter-rouge">max-width</code> of my <code class="language-plaintext highlighter-rouge">div</code> so that my content fits in various screen sizes. Instead, it sets the <code class="language-plaintext highlighter-rouge">max-width</code>, but also automatically adds padding and margins to my container, which I may not want. In this case, my only choice is to use write my own, or overwrite <code class="language-plaintext highlighter-rouge">.container</code>, and in that case why am I even using a UI framework? This functionality is also not immediately obvious on the <a href="https://getbootstrap.com/docs/5.2/layout/containers/">Bootstrap documentation</a>. On the other hand, <a href="https://tailwindcss.com/docs/container">Tailwind’s documentation</a> clearly shows what the setting a div to a <code class="language-plaintext highlighter-rouge">.container</code> actually does. Sure, it’s a lot more verbose and requires more writing since not everything is done for you, but you get to have finer control over how much margin or padding to add, or at what breakpoint should margin and padding be added.</p>
+
+<h2 id="learning-curve">Learning Curve</h2>
+
+<p>I think that it doesn’t take too long to get used to a new framework and switching wasn’t too bad, since a majority of the classes that you primarily need to use are flexboxes, paddings and margins, and a handful of others. And, in cases where you want an accordion or some specialized thing, then you can refer to the extensive documentation that most popular libraries include, and/or existing articles from other people who talk through how to get it done. All in all, as a software developer, using CSS frameworks is definitely beneficial to me and helps speed up the development process.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

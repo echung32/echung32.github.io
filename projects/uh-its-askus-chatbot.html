@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="UH ITS AskUs Chatbot - HACC 2023 | Ethan Chung | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://echung32.github.io/img/profile.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ethan Chung | Professional Portfolio">
+    <meta property="og:url" content="https://echung32.github.io/projects/uh-its-askus-chatbot.html">
+    <meta property="og:title" content="UH ITS AskUs Chatbot - HACC 2023 | Ethan Chung | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://echung32.github.io/img/profile.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>UH ITS AskUs Chatbot - HACC 2023 | Ethan Chung | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Ethan Chung</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">UH ITS AskUs Chatbot - HACC 2023</h1>
+ <p><img width="100%" class="py-4" src="../img/url-shortener/HACC-with-Flag.png" /></p>
+
+<p>The current UH ITS Ask Us system relies on a keyword search-based approach, demanding users to input specific keywords for information retrieval, making it less user-friendly. To address this, our objective is to implement a conversational AI using LLaMA2, trained on the extensive knowledge base from the ITS team, derived from hundreds of public web pages. This initiative aims to not only alleviate workload but also enhance user experience and improve the efficiency of the help process. Simultaneously, we plan to design a reactive, intuitive, and functional user interface to ensure seamless operations.</p>
+
+<p><img width="100%" class="py-4" src="../img/askus-chatbot-home.png" /></p>
+
+<h2 id="what-i-learned">What I Learned</h2>
+
+<p>We embraced the Software Engineering class’s approach to issue-driven project management (IDPM), adhering to the methodology of breaking down substantial tasks into more manageable components. Each goal was assigned to an individual team member, and we established milestones to periodically assess the overall system’s status and progress. In addition, a collaborative atmosphere was fostered throughout the project’s duration, with team members regularly raising issues and engaging in brainstorming sessions to provide mutual support and feedback.</p>
+
+<p>Furthermore, to ensure the seamless functionality of our website, we implemented acceptance testing. This approach allowed us to systematically validate that the website operated as intended, eliminating the need for manual verification of issues after each modification. This holistic strategy not only enhanced our project management efficiency but also underscored our commitment to teamwork, proactive issue resolution, and the continuous improvement of our system, adapting to the various changes in requirements and addition of new features that we had not planned for initially.</p>
+
+<h2 id="challenges">Challenges</h2>
+
+<p>Regrettably, we encountered challenges in fully adhering to the class requirements as the computational demands of running a locally hosted large language model (LLM) proved to be prohibitively expensive. Local servers with machine learning-capable GPUs, essential for this task, were not accessible on DigitalOcean. Consequently, we opted for an alternative strategy, opting to utilize Google Cloud Platform to host both our website and the large language model.</p>
+
+<p>Nonetheless, our primary setbacks stemmed from opting for a locally hosted large language model instead of utilizing a platform like OpenAI, which is what many of the other groups had used. Initially, we underestimated the complexity of training the chatbot to provide accurate responses based on given information. Unfortunately, our solution exhibited issues such as hallucinating information, repeating user prompts, and unexpectedly shifting from providing responses to asking questions.</p>
+
+<h2 id="my-contributions">My Contributions</h2>
+
+<p>Primarily, my focus centered on the website’s development, encompassing tasks such as designing the interface, enhancing user experience, crafting the database structure, and implementing various features. One notable accomplishment was the analytics page, enabling administrators to dynamically assess statistics related to chatbot interactions. Additionally, I dedicated efforts to refining the large language model, experimenting with prompt optimization and exploring diverse tokenization methods, although the primary responsibility for this aspect rested with other team members.</p>
+
+<p><img width="100%" class="py-4" src="../img/askus-analytics.png" /></p>
+
+<h2 id="links">Links</h2>
+
+<p>More information about the website</p>
+<ul>
+  <li><a href="https://bruhgroup.github.io/">https://bruhgroup.github.io/</a></li>
+</ul>
+
+<p>Our GitHub repository</p>
+<ul>
+  <li><a href="https://github.com/bruhgroup/its-knowledge-base">https://github.com/bruhgroup/its-knowledge-base</a></li>
+</ul>
+
+<p>Try it out!</p>
+<ul>
+  <li><a href="https://its.monkes.net/">https://its.monkes.net/</a></li>
+</ul>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

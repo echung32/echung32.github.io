@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Chatbot Software Design | Ethan Chung | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://echung32.github.io/img/profile.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ethan Chung | Professional Portfolio">
+    <meta property="og:url" content="https://echung32.github.io/essays/chatbot-software-design.html">
+    <meta property="og:title" content="Chatbot Software Design | Ethan Chung | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://echung32.github.io/img/profile.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Chatbot Software Design | Ethan Chung | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Ethan Chung</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Chatbot Software Design</h1>
+  <span class="date">29 Nov 2023</span>
+  <hr>
+  <p><img width="100%" class="rounded py-4" src="../img/chatbot-banner.png" /></p>
+
+<p>Chatbot development involves a strategic approach guided by design principles, which direct developers in creating intelligent, user-friendly, and scalable conversational interfaces. These principles serve as the underlying rules and guidelines, shaping the chatbot’s form and function coherently. They are akin to sheet music for constructing structures or musical notes for a harmonious symphony. This essay will explore the intricacies of various design patterns used in chatbot development, focusing on state management, server-side rendering (SSR), and client-side rendering (CSR).</p>
+
+<h1 id="state-management">State Management</h1>
+
+<p>Managing the state of the conversation is crucial for a messaging app. The State design pattern helps represent the various states a chatbot can be in during a conversation. Initially, information about the user may be collected, such as their email, name, and question. After storing that information in the state, this information is used to associate the conversations for the current session to that user. Messages, from both the user and the chatbot, are updated within the state. The state pattern aids in organizing and encapsulating the behavior associated with each state, promoting a modular and maintainable codebase.</p>
+
+<h1 id="server-side-rendering-ssr">Server-Side Rendering (SSR)</h1>
+
+<p>SSR improves the rendering performance of web applications, and provides extra security for API calls, such as the authentication tokens, which would otherwise have to be made transparent to the client application, thus reducing the exposure to threats.</p>
+
+<p>SSR also allows for more controlled access to the database, as the server acts as an intermediary, handling connections and executing queries. Coincidentally, this also means that SSR can improve database performance by reducing concurrent connections, minimizing contention, preventing bottlenecks, and allowing for more efficient resource utilization.</p>
+
+<h1 id="client-side-rendering-csr">Client-Side Rendering (CSR)</h1>
+
+<p>Client-Side Rendering is necessary when using components in React with State, as a client’s state does not exist on the server side. CSR is essential for dynamic updates during a chat session. This is why React is known as a reactive language rather than a functional one. It renders content on the client side, facilitating real-time updates to the page once any data within the page is changed. In chatbot development, CSR is used to dynamically render new messages and interactive elements, ensuring a responsive conversation flow.</p>
+
+<h1 id="wrapping-it-up">Wrapping it up</h1>
+
+<p>Design patterns play a crucial role in chatbot development, acting as a choreography that organizes the process. They are like architectural blueprints or musical notes, shaping the conversation flow. State design patterns orchestrate conversation, like a skilled conductor, while Server-Side Rendering serves as a security guard, shielding sensitive information. Client-Side Rendering acts as a responsive soloist, adapting to user cues. Using only a small selection of a developer’s toolkit in design patterns, the chatbot was already able to achieve a cohesive user experience. With the help of other design patterns, such as Publish/Subscribe or Mementos, the user experience could be enhanced further to have live updates in other parts of the website and restore chat states of closed messages.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Athletic Programming with Javascript | Ethan Chung | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://echung32.github.io/img/profile.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ethan Chung | Professional Portfolio">
+    <meta property="og:url" content="https://echung32.github.io/essays/athletic-programming.html">
+    <meta property="og:title" content="Athletic Programming with Javascript | Ethan Chung | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://echung32.github.io/img/profile.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Athletic Programming with Javascript | Ethan Chung | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Ethan Chung</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Athletic Programming with Javascript</h1>
+  <span class="date">29 Aug 2023</span>
+  <hr>
+  <p><img width="100%" class="rounded py-4" src="../img/athletic-programming/javascript-logo-banner.jpg" /></p>
+
+<h2 id="freecodecamp">FreeCodeCamp</h2>
+
+<p>I’ve been using Javascript long before ICS 314, a course about software engineering concepts and technologies, but it still reigns as my favorite language to quickly develop simple programs. If I want to get something done quickly, I’d use Javascript. Compared to other languages like Java, there is no need to worry about types, and there is no need to write a bunch of boilerplate code to get a simple main() function to run. Javascript can be used either for functional programming (like Python), or object-oriented programming (like Java), which makes it highly flexible.</p>
+
+<p>After going through and completing the freecodecamp course, I realized that I was already familiar with most of the content, including the ES6 portion, but it was nice to receive a refresher about some features and functions of Javascript. I think that it’s important to reinforce your knowledge about even the basics, since there can be things that you didn’t know about or simply forgot about.</p>
+
+<h2 id="javascript-downfalls">Javascript Downfalls</h2>
+
+<p>I think that, from a software engineering perspective, Javascript is certainly not a bad language. However, I’ve personally forbidden myself from ever using Javascript for larger projects. An untyped language is great to get things done quickly, but can likewise quickly grow to become a maintainer’s nightmare. I’ve interned at a company which developed their framework around Javascript, and the hassle of figuring out the expected structure of the data, or the random and inconsistent types being passed into functions, can cause immense frustration. It’s even worse when a function takes an object instead, with absolutely no documentation of what that object takes. It takes time to search through existing code and piece together what it expects. JSDocs were created as a simple way to type your code, but at that point, why not just use a typed language instead? I’ve since been using Typescript since it’s almost identical to Javascript, and has made maintaining code far simpler for not only me, but for others who work with me.</p>
+
+<h2 id="athletic-software-engineering">Athletic Software Engineering</h2>
+
+<p>Moving on, this class also heavily incorporates athletic software engineering. I feel that athletic software engineering is quite interesting and motivates me to explore the various ways to solve a problem. While the practice WODs (Workout of the Day) are not too complicated in nature, they encourage me to quickly think of a solution to the problem. It’s fun to see how fast I can beat the time and inspires me to seek implementations that can reduce my time further.</p>
+
+<p>For example, the previous workout called for us to implement a method, <code class="language-plaintext highlighter-rouge">isUnique</code>, which accepts an array as a parameter and checks whether all elements of the array are unique.</p>
+
+<p>My first implementation pushed all elements into the array with an object and looked like this:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">isUnique</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{};</span>
+  <span class="k">for</span> <span class="p">(</span><span class="nx">int</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">obj</span><span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">obj</span><span class="p">).</span><span class="nx">length</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>After a couple of iterations, I discovered that I could completely implement this function using a single line and, because why not, use an anonymous function.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">isUnique</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nb">Set</span><span class="p">(</span><span class="nx">arr</span><span class="p">).</span><span class="nx">size</span> <span class="o">===</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Of course, in the pursuit of seemingly shorter code, we shouldn’t forget to consider the efficiency nor readability of these implementations. Shorter is not always better, and sometimes developers may intentionally write more verbose code that is easily understood. I think that a developer would be able to identify how my first implementation works far quicker than the second, since developers generally work more with objects than Sets.</p>
+
+<p>Regardless, my primary goal doing these WODs is to explore the many different ways to implement a solution. It can be challenging, and can be quite stressful at times, but has overall been a great experience. I think this method of athletic software engineering works for me, since my competitive nature seeks out different solutions in search of faster time, and it helps reinforce existing knowledge and expands my exposure to various problems.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Analyzing my first WOD | Ethan Chung | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://echung32.github.io/img/profile.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ethan Chung | Professional Portfolio">
+    <meta property="og:url" content="https://echung32.github.io/essays/analyzing-first-wod.html">
+    <meta property="og:title" content="Analyzing my first WOD | Ethan Chung | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://echung32.github.io/img/profile.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Analyzing my first WOD | Ethan Chung | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Ethan Chung</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Analyzing my first WOD</h1>
+  <span class="date">02 Sep 2023</span>
+  <hr>
+  <p><img width="100%" class="rounded py-4" src="../img/analyzing-first-wod/banner.png" /></p>
+
+<p>On August 30th, we were assigned our first in-class timed WOD (Workout of the Day). Professor Port roughly went over the assignment. We were to iterate through a list of numbers from 1 to 100. Any number that is divisible by 4 should return “Bert”, and every number that is divisible by 6 should return “Ernie”. If a number is divisible by both 4 and 6, then it should return “BertErnie”. Otherwise, the input itself should be returned.</p>
+
+<h2 id="initial-thoughts">Initial Thoughts</h2>
+<p>After Professor Port went over the assignment, my initial thought was the result of a direct translation from the instructions into code. It’s the most obvious and straightforward solution, supported by the fact that a majority of the students had almost identical solutions.</p>
+
+<h3 id="the-obvious-solution">The Obvious Solution</h3>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">BertErnie</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">%</span> <span class="mi">6</span> <span class="o">===</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nx">num</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="dl">"</span><span class="s2">BertErnie</span><span class="dl">"</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="dl">"</span><span class="s2">Bert</span><span class="dl">"</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">%</span> <span class="mi">6</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="dl">"</span><span class="s2">Ernie</span><span class="dl">"</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">num</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">BertErnie</span><span class="p">(</span><span class="nx">i</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Although this would solve the problem, I was unsatisfied with the amount of if-else statements that were being used and I felt that there had to be a way to solve the problem without checking divisibility of the same number twice. And, obviously, there ended up being a better way.</p>
+
+<h3 id="my-solution">My Solution</h3>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">BertErnie</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="nx">str</span> <span class="o">+=</span> <span class="dl">"</span><span class="s2">Bert</span><span class="dl">"</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">%</span> <span class="mi">6</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="nx">str</span> <span class="o">+=</span> <span class="dl">"</span><span class="s2">Ernie</span><span class="dl">"</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">===</span> <span class="dl">""</span><span class="p">)</span> <span class="nx">str</span> <span class="o">=</span> <span class="nx">num</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nx">str</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">BertErnie</span><span class="p">(</span><span class="nx">i</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>I was able to remove the duplicated divisibility calculations and reduced the comparisons from 4 down to 3. I do believe that I can optimize the code further, by not initializing str as an empty string, then checking for null instead of an empty string, which might look something like this.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">BertErnie</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">str</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="nx">str</span> <span class="o">+=</span> <span class="dl">"</span><span class="s2">Bert</span><span class="dl">"</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">%</span> <span class="mi">6</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="nx">str</span> <span class="o">+=</span> <span class="dl">"</span><span class="s2">Ernie</span><span class="dl">"</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nx">str</span> <span class="o">??</span> <span class="nx">num</span><span class="p">;</span> <span class="c1">// ‘??’ is the nullish-coalescing operator.</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Nonetheless, these claims of optimizations are purely theoretical and nothing has been proven by benchmarks. The obvious solution would have been sufficient and any further is likely within the realm of premature optimizations, at least within the context of this problem.</p>
+
+<h2 id="takeaways">Takeaways</h2>
+<p>I feel like the experience of completing a WOD in-class is quite valuable. It was exciting to hear about how other students implemented their solutions. It’s an extremely simple problem, yet comes with a multitude of possible solutions. I realized the importance of discussing the WOD after we’ve all had a chance to do it ourselves, since it helps open my eyes to different implementations that I hadn’t thought to use.</p>
+
+<p>In the future, I want to consider using more novel approaches to solving a problem. It would be cool to figure out how I could use a dictionary to solve the BertErnie problem, or maybe even use a switch statement (both are possible). It’s a test of my knowledge about various algorithms, my familiarity with the language, and most importantly, how creative I can be with my solution.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Project Effort Estimation | Ethan Chung | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://echung32.github.io/img/profile.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ethan Chung | Professional Portfolio">
+    <meta property="og:url" content="https://echung32.github.io/essays/project-effort-estimation.html">
+    <meta property="og:title" content="Project Effort Estimation | Ethan Chung | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://echung32.github.io/img/profile.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Project Effort Estimation | Ethan Chung | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Ethan Chung</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Project Effort Estimation</h1>
+  <span class="date">14 Dec 2023</span>
+  <hr>
+  <p><img width="100%" class="rounded py-4" src="../img/project-effort-banner.png" /></p>
+
+<h2 id="the-task">The Task</h2>
+
+<p>In completing the assigned task, I followed the procedure of providing time estimates for newly added issues in the project, including the identifier of the person making the estimate. It’s acknowledged that these estimates are likely to be inaccurate, but their utility lies in aiding project planning and coordination. I meticulously tracked the effort invested in each issue and, upon resolution, added the actual effort expended. For effective tracking, I opted to integrate a timer extension into IntelliJ. The collected effort data, as outlined in the assignment, is intended for a study on error in effort estimation by novice software engineers. Participants were encouraged to use a timer extension to enhance data accuracy, with the incentive of receiving extra credit for providing high-quality data. This process highlights the importance of accurate record-keeping for research purposes within the context of the project.</p>
+
+<h2 id="making-effort-estimates">Making Effort Estimates</h2>
+
+<p>I developed my effort estimates by leveraging both my experience and an assessment of the perceived difficulty of each task. Initially, as I didn’t have a clear idea of how difficult these tasks would be, I frequently under-or-overestimated the difficulties. To enhance accuracy, I created a “difference” column, which calculates the variance between the actual effort (comprising coding and noncoding efforts) and the estimated effort.</p>
+
+<p>To visually represent these differences, I applied conditional formatting to the difference column, utilizing a range of color intensities. Upon reviewing the formatted cells, it’s evident that the initial estimates for the first 25 tasks were notably inaccurate, as indicated by harsher colors. However, as the tasks progressed, the colors in the corresponding cells became less intense, reflecting a convergence between the estimated and actual effort.</p>
+
+<p>The evolution in color intensity suggests a learning curve in refining my estimates. While the initial tasks may have been more challenging to predict accurately, the subsequent tasks demonstrate an improvement in precision as I drew upon my growing understanding of the project’s requirements and vision. This iterative process allowed me to progressively enhance the accuracy of my effort estimates based on the evolving dynamics of the project.</p>
+
+<h2 id="why-bother-when-it-can-be-inaccurate">Why bother, when it can be inaccurate?</h2>
+<p>Despite the occasional inaccuracies in the estimations, there are tangible benefits to making effort estimates in advance. In practical contexts, such as professional settings, providing estimates serves as a valuable communication tool. It offers other group members an approximation of the time required to complete a task, enabling them to gain insights into the projected timeline. This information is crucial for coordinating efforts within a project or workflow. It allows others to plan their activities accordingly—whether to await the completion of a dependent task or to proceed with other non-dependent tasks in the interim.</p>
+
+<p>So, even if the estimates are not always spot-on, the act of making them facilitates better project management and resource allocation. It fosters transparency and helps establish realistic expectations, contributing to a more organized and efficient workflow. Despite the inherent challenge of predicting effort accurately, estimations are a valuable tool for effective project planning and coordination.</p>
+
+<p>A noteworthy example of the impact of estimates is evident in the development and integration of the LLM chatbot into the website. While initial estimates were significantly off, leading to continuous challenges in getting it to function properly, the experience prompted a strategic decision. Since we had spent a week on this part of our project, I opted to redirect my effort towards initiating the development of the website, and leave my other team members to work out the chatbot instead. This adaptive approach showcases how estimation, even when imperfect, can guide timely and informed decisions in the project development process.</p>
+
+<h2 id="whats-the-benefit">What’s the benefit?</h2>
+<p>There is a definite benefit to tracking the actual effort expended on these issues. As previously mentioned, this practice is essential for maintaining a clear understanding of task completion within the project timeline. Knowing precisely when someone has concluded a particular task is instrumental in orchestrating seamless workflow transitions. It enables efficient decision-making regarding whether team members should proceed with other tasks while awaiting the completion of a specific assignment.</p>
+
+<p>By consistently monitoring the actual effort invested in each issue, project managers and team members gain real-time insights into progress. This information not only aids in gauging project timelines but also facilitates proactive adjustments to resource distribution. Additionally, it serves as a valuable dataset for retrospective analysis, contributing to improved future planning by identifying patterns and refining the accuracy of future effort estimates. In essence, tracking actual effort expended enhances project transparency, fosters efficient resource utilization, and lays the groundwork for continuous process improvement in the future.</p>
+
+<h2 id="data-collection">Data Collection</h2>
+<p>I monitored my actual effort by calculating the time spent on an issue, derived from the difference between the reported time from Darkyen’s Time Tracker and the time I initiated work on the respective task. However, I acknowledge that the accuracy of this tracking method fluctuated. The variability arises from instances where noncoding times may not be directly correlated with productive non-coding efforts on the task at hand. In some cases, these noncoding intervals might be attributed to external factors, distractions, or engagements unrelated to the intended non-coding efforts for the specific issue. Consequently, while this tracking approach provided a quantitative measure of effort, its precision was influenced by the nuanced nature of noncoding activities and potential diversions from the intended focus.</p>
+
+<h2 id="view-data">View Data</h2>
+<p>If you want to view the data collected, <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSV459Z-bALjHDeTYfD1Rsv1V8Ka8-GkHGRoEKHDCssPwa_Rf6OQA-5LJnhxRDrrI0dgazFsfa80R3V/pubhtml?gid=0&amp;single=true">see this spreadsheet</a>.</p>
+
+<p>This data was collected during the development of the <a href="https://echung32.github.io/projects/uh-its-askus-chatbot.html">ITS AskUs Project</a>.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
