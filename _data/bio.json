@@ -10,7 +10,7 @@
     "location": { "address": "", "postalCode": "", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "echung32", "url": "https://github.com/echung32" },
-      { "network": "linkedin", "username": "ethanchung", "url": "https://www.linkedin.com/in/ethan-chung-010a96289/" }
+      { "network": "linkedin", "username": "ethanchung", "url": "www.linkedin.com/in/ethanchung32" }
     ]
   },
   "interests": [
@@ -23,11 +23,11 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "Java", "Javascript", "TypeScript", "PHP", "React" ]
+      "keywords": [ "Java", "Javascript", "TypeScript", "PHP", "React", "Meteor", "TailwindCSS" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "Windows", "Fedora Linux", "Git/GitHub", "JetBrains" ]
+      "keywords": [ "Windows", "Fedora Linux", "Git/GitHub", "JetBrains", "DigitalOcean" ]
     }
   ],
   "education": [
@@ -38,6 +38,7 @@
       "startDate": "2022",
       "endDate": "Present",
       "courses": [
+        "ICS 314", "ICS 311", "ICS 390"
       ]
     }
   ],
@@ -45,6 +46,28 @@
     
   ],
   "volunteer": [
+    {
+      "organization": "HACC 2022 - ETS URL Shortener",
+      "website": "https://github.com/bruhgroup/its-knowledge-base",
+      "position": "Project Leader & Software Developer",
+      "startDate": "2023",
+      "endDate": "2023",
+      "summary": "Designed a proof-of-concept secure URL shortener service for use by the state of Hawaii.",
+      "highlights": [
+        "Secured 1st place in the Hawaii Annual Code Challenge (HACC), out of the 44 teams who participated.",
+        "Used React and TypeScript with Tailwind CSS to build frontend UI, and Firebase for the backend."]
+    },
+    {
+      "organization": "HACC 2023 - ITS AskUs Chatbot",
+      "website": "https://github.com/bruhgroup/its-knowledge-base",
+      "position": "Project Leader & Software Developer",
+      "startDate": "2023",
+      "endDate": "2023",
+      "summary": "Developed a chatbot using University of Hawaii's ITS help articles for contextual understanding.",
+      "highlights": [
+        "Utilized Python Langchain and Meta’s LLAMA2 models to self-host a local LLM Chatbot on GCP.",
+        "Created the frontend using Next.js, Typescript, and Tailwind CSS, with PostgreSQL for the database."]
+    },
     {
       "organization": "PANDA - ACM",
       "website": "https://acmmanoa.org/panda",
@@ -54,7 +77,8 @@
       "summary": "Assist in teaching various programming concepts to ICS students",
       "highlights": [
         "Teach students about various technical interview techniques",
-        "Go over various data structures and algorithms"
+        "Go over various data structures and algorithms",
+        "Created a website to view weekly questions (panda.acmmanoa.org) using Jekyll and Cloudflare Pages, with GitHub Actions to automatically synchronize markdown files across multiple repositories."
       ]
     },
     {
@@ -62,7 +86,7 @@
       "position": "Assistant Teacher Assistant",
       "website": "",
       "startDate": "2023",
-      "endDate": "Present",
+      "endDate": "2023",
       "summary": "Assist in the ICS 211 course as an assistant to the teacher assistant.",
       "highlights": [
         "Help students understand computer science concepts",
